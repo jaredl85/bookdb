@@ -191,7 +191,7 @@ Loading
 Movies
 ===============
 */
-.movies {
+.books {
   width: 90vw;
   max-width: var(--max-width);
   display: grid;
@@ -200,17 +200,17 @@ Movies
   padding-bottom: 5rem;
   padding-top: 3rem;
 }
-.movie {
+.book {
   position: relative;
   overflow: hidden;
 }
-.movie img {
+.book img {
   width: 100%;
   height: 400px;
   display: block;
   object-fit: cover;
 }
-.movie-info {
+.book-info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -220,41 +220,41 @@ Movies
   transform: translateY(100%);
   transition: var(--transition);
 }
-.movie-info h4 {
+.book-info h4 {
   color: var(--clr-white);
   margin-bottom: 0.25rem;
 }
-.movie-info p {
+.book-info p {
   margin-bottom: 0;
   color: var(--clr-white);
 }
-.movie:hover .movie-info {
+.book:hover .book-info {
   transform: translateY(0);
 }
 @media screen and (min-width: 576px) {
-  .movies {
+  .books {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 }
 
 /*
 =============== 
-Single Movie
+Single BOOK
 ===============
 */
 
-.single-movie {
+.single-book {
   width: 90vw;
   max-width: var(--max-width);
   margin: 4rem auto;
   display: grid;
   gap: 2rem;
 }
-.single-movie img {
+.single-book img {
   width: 100%;
   display: block;
 }
-.single-movie p {
+.single-book p {
   max-width: 35em;
   font-size: 1.2rem;
   margin-top: 1.5rem;
@@ -271,7 +271,7 @@ Single Movie
   letter-spacing: var(--spacing);
 }
 @media screen and (min-width: 992px) {
-  .single-movie {
+  .single-book {
     grid-template-columns: 1fr 2fr;
   }
 }
